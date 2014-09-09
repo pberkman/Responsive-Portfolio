@@ -1,0 +1,228 @@
+/***********************
+LAYOUT FOR ALL PAGES 
+***********************/
+
+body {
+	margin:0 auto;
+	font-family: 'Pathway Gothic One', sans-serif;
+}
+
+
+
+/*** Links ***/
+
+a:link {
+	color:#000000;
+}
+
+a:visited {
+	color:#000000;
+}
+
+a:hover {
+	color:#b0E7E5;
+	text-shadow:0.5px 1px #000000;
+}
+p a:hover {
+	color:#fceabf;
+}
+
+
+
+/*** Header Section ***/
+
+header {
+	position: fixed;
+	top:0;
+	width:100%;
+	background-color:#B11200;
+	text-align: center;
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+}
+h1, h2 {
+	color:#fceabf;
+}
+
+h1 {
+	font-variant: small-caps;
+	font-size: 2em;
+	margin:0;
+}
+
+h2 {
+	font-size:1em;
+}
+
+nav {
+	background-color: #EF4036;
+	border-top: 1px groove #cccccc;
+	border-bottom: 1px groove #cccccc;
+}
+
+nav li {
+	list-style: none;
+	display:inline-block;
+	font-family: 'Great Vibes', cursive;
+	font-size: 1.5em;
+	padding: 5px 15px 5px 15px;
+}
+
+nav a:link {
+	text-decoration: none;
+}
+
+a.pageHighlight {
+	color:#B0E7E5;
+}
+
+li a:hover {
+	color:#b0E7E5;
+	text-shadow:0.5px 1px #000000;
+}
+
+
+
+/*** Content Section ***/
+
+.contentWrapper {
+	text-align: center;
+	margin-top:175px;
+}
+
+
+
+/*** Footer Section ***/
+
+.greatVibes {
+	font-family: 'Great Vibes', cursive;
+	text-shadow:1px 1px #000000;
+	color:#fceabf;
+}
+
+footer {
+	background-color: #cccccc;
+	margin:0;
+	border-top: 1px solid #bbbbbb;
+	text-align: center;
+	padding:10px 0 10px 0;
+}
+
+footer ul, footer p {
+	margin:0;
+	padding:5px;
+}
+
+footer li {
+	display: inline-block;
+	font-size: 25px;
+	padding:5px 10px 5px 10px;
+}
+
+
+/***********************
+HOME PAGE 
+***********************/
+
+#profilePhoto {
+	width:300px;
+	height:300px;
+	border-radius: 100%;
+	margin:10px 0 10px 0;
+}
+
+.about1 {
+	padding:10px;
+}
+
+.about1 h1 {
+	color:#73D4D1;
+}
+
+/***********************
+ABOUT PAGE 
+***********************/
+
+.about {
+	text-align: center;
+	width:350px;
+	margin:0 auto;
+}
+
+.about ul {
+	padding:0;
+}
+
+.aboutWrapper {
+	list-style: none;
+}
+
+.about4 {
+	background-color: #73D4D1;
+}
+
+.about2, .about5 {
+	background-color: #F0565B;
+}
+
+.about3 {
+	background-color: #FCEABF;
+}
+
+.aboutWrapper>li {
+	padding:10px 10px 10px 10px;
+}
+
+.skillsList li {
+	list-style:none;
+}
+
+.about3 h1 {
+	color:#F0565B;
+}
+
+.about5 a:link, .about5 a:visited {  /* Link to resume */
+	color: #FCEABF;
+}
+
+
+/***********************
+PROJECTS PAGE 
+***********************/
+
+p {
+	margin:5px;
+	padding:0;
+}
+.instaAlbum, .movieSynop, .shoppingList {
+	width:300px;
+	height:222px;
+	padding:15px;
+	margin:20px;
+	background-color: #73D4D1;
+	display: inline-block;
+	vertical-align: top;
+}
+
+ .projects img {
+ 	width:300px;
+ }
+
+#instaTitle {
+	font-family: 'Qwigley', cursive;
+	font-size: 1.5em;
+	height:20px;
+}
+
+#movieTitle {
+	font-family: 'Limelight', cursive;
+	font-size: 1em;
+}
+
+#shoppingTitle {
+	font-family: Impact, sans-serif;
+}
+
+.projects a:hover {
+color:#FCEABF;
+}
