@@ -2,12 +2,22 @@
 LAYOUT FOR ALL PAGES 
 ***********************/
 
-body {
+
+html, body {
 	margin:0 auto;
+	text-align: center;
 	font-family: 'Pathway Gothic One', sans-serif;
+	height:100%;
 }
 
+#page-wrapper { /*for footer to remain at bottom*/
+	min-height: 100%;
+	position: relative;
+}
 
+ul {
+	padding:0;
+}
 
 /*** Links ***/
 
@@ -33,21 +43,19 @@ p a:hover {
 
 header {
 	position: fixed;
-	top:0;
 	width:100%;
 	background-color:#B11200;
 	text-align: center;
-	padding-bottom: 5px;
-	margin-bottom: 10px;
 }
+
 h1, h2 {
 	color:#fceabf;
+	margin:0;
 }
 
 h1 {
 	font-variant: small-caps;
 	font-size: 2em;
-	margin:0;
 }
 
 h2 {
@@ -56,8 +64,6 @@ h2 {
 
 nav {
 	background-color: #EF4036;
-	border-top: 1px groove #cccccc;
-	border-bottom: 1px groove #cccccc;
 }
 
 nav li {
@@ -65,7 +71,7 @@ nav li {
 	display:inline-block;
 	font-family: 'Great Vibes', cursive;
 	font-size: 1.5em;
-	padding: 5px 15px 5px 15px;
+	padding:5px 10px 5px 10px;
 }
 
 nav a:link {
@@ -83,11 +89,10 @@ li a:hover {
 
 
 
-/*** Content Section ***/
 
-.contentWrapper {
-	text-align: center;
-	margin-top:175px;
+/*** Content Section ***/
+#content-wrapper {
+	padding:130px 0 80px 0;
 }
 
 
@@ -101,22 +106,18 @@ li a:hover {
 }
 
 footer {
+	position: absolute;
+	bottom:0;
+	height:80px;
+	width: 100%;
 	background-color: #cccccc;
-	margin:0;
 	border-top: 1px solid #bbbbbb;
-	text-align: center;
-	padding:10px 0 10px 0;
-}
-
-footer ul, footer p {
-	margin:0;
-	padding:5px;
+	clear: both;
 }
 
 footer li {
 	display: inline-block;
 	font-size: 25px;
-	padding:5px 10px 5px 10px;
 }
 
 
@@ -128,61 +129,76 @@ HOME PAGE
 	width:300px;
 	height:300px;
 	border-radius: 100%;
-	margin:10px 0 10px 0;
 }
 
-.about1 {
-	padding:10px;
+#selfPic {
+	vertical-align: middle;
+	min-width:300px;
+	margin:20px auto;
 }
 
-.about1 h1 {
-	color:#73D4D1;
+#profile {
+	vertical-align: middle;
+	margin:20px;
 }
+
+
 
 /***********************
 ABOUT PAGE 
 ***********************/
 
-.about {
-	text-align: center;
-	width:350px;
-	margin:0 auto;
-}
-
-.about ul {
-	padding:0;
-}
-
 .aboutWrapper {
 	list-style: none;
 }
 
-.about4 {
-	background-color: #73D4D1;
+.about1 {
+	background-color: #FCEABF;
+	font-size: 1.3em;
+
 }
 
-.about2, .about5 {
+.about2 {
 	background-color: #F0565B;
+	font-size: 1.7em;
 }
 
 .about3 {
-	background-color: #FCEABF;
+	background-color: #73D4D1;
+	font-size: 1.3em;
 }
 
-.aboutWrapper>li {
-	padding:10px 10px 10px 10px;
+.about4 {
+	background-color: #FCEABF;
+	font-size: 1.7em;
+	line-height: 175px;
+}
+
+.skillsList ul {
+	padding: 0;
 }
 
 .skillsList li {
 	list-style:none;
 }
 
-.about3 h1 {
+.about1 h1, .about4 h1 {  /* Change h1 color to red on all yellow background */
 	color:#F0565B;
 }
 
-.about5 a:link, .about5 a:visited {  /* Link to resume */
-	color: #FCEABF;
+.about4 a:link, .about4 a:visited {  /* Link to resume */
+	color: #F0565B;
+}
+
+/*positioning of ul */
+
+.aboutWrapper>li {
+	text-align: center;
+	margin:0 auto;
+	display: block;
+	width:60%;
+	height:200px;
+
 }
 
 
@@ -190,28 +206,26 @@ ABOUT PAGE
 PROJECTS PAGE 
 ***********************/
 
-p {
-	margin:5px;
-	padding:0;
-}
-.instaAlbum, .movieSynop, .shoppingList {
-	width:300px;
-	height:222px;
-	padding:15px;
-	margin:20px;
+.projects > div {
+	width:60%;
 	background-color: #73D4D1;
 	display: inline-block;
 	vertical-align: top;
+	margin:10px auto;
+	padding-bottom:10px;
+}
+.projects p, .projects a {
+	padding:0;
+	margin:0;
 }
 
  .projects img {
- 	width:300px;
+ 	width:100%;
  }
 
 #instaTitle {
 	font-family: 'Qwigley', cursive;
-	font-size: 1.5em;
-	height:20px;
+	font-size: 1em;
 }
 
 #movieTitle {
@@ -224,5 +238,24 @@ p {
 }
 
 .projects a:hover {
-color:#FCEABF;
+	color:#FCEABF;
 }
+
+
+/***********************
+CONTACT PAGE 
+***********************/
+
+.contact-wrapper {
+	padding:30px;
+}
+
+#contactWords {
+	font-size: 1.5em;
+
+}
+span {
+	font-family: 'Great Vibes', cursive;
+	font-size: 1.5em;
+}
+

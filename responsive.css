@@ -1,0 +1,72 @@
+@media screen and (min-width:480px) {
+
+
+	/***********************
+	HOME PAGE 
+	***********************/
+
+		#selfPic {
+			display: inline-block;
+		}
+		#profile {
+			display: inline-block;
+			max-width:500px;
+		}
+
+
+	/***********************
+	ABOUT PAGE 
+	***********************/
+
+		.aboutWrapper {
+			max-width: 400px;
+			margin:20px auto;
+			text-align: center;
+		}
+
+		.aboutWrapper > li {
+			float:left;
+			max-width: 200px;
+			max-height: 200px;
+		}
+
+	/***********************
+	CONTACT PAGE 
+	***********************/
+		
+		.contact-wrapper {
+			max-width: 800px;
+			text-align: center;
+			margin:0 auto;
+			margin-top: 30px;
+		}
+
+		#contactWords {
+			width:45%;
+			float:left;
+		}
+
+		#contactInfo {
+			width:45%;
+			float:right;
+			vertical-align: middle;
+			padding-top: 60px;
+		}
+}
+@media screen and (min-width:800px) {
+
+
+	/***********************
+	ABOUT PAGE 
+	***********************/
+
+		.aboutWrapper {
+			min-width:800px;
+			margin:0 auto;
+			margin-top:40px;
+			text-align: center;
+		}
+
+
+
+}
